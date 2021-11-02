@@ -1,12 +1,8 @@
 --menu program
 local component = require("component")
-local gpu = component.gpu
-local w, h = gpu.getResolution()
 smelteryInfo = require("smeltery")
 furnaceInfo = require("seared_furnace")
 tankInfo = require("tinker_tank")
---lazy
-gpu.fill(1, 1, w, h, " ")
 local active = true
 
 while active do
