@@ -22,7 +22,7 @@ function _tank.main()
 				print("--- Fluid: " .. i)
 				print("Name of fluid: " .. fluids[i].label)
 				print("Amount of fluid: " .. fluids[i].amount)
-				print("Amount of bars" .. (fluids[i].amount) / 144)
+				print("Amount of bars: " .. string.format("%.0f", (fluids[i].amount) / 144))
 				if i%3 == 0 and i ~= #fluids then
 					print("---")
 					print("Press enter to continue")
