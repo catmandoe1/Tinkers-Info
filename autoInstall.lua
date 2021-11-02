@@ -19,4 +19,5 @@ if not filesystem.exists("/home/TinkersInfo") then
 else
 	print("TinkersInfo already installed")
 	print("Check directories")
+	filesystem.remove("home/autoInstall.lua")
 end
