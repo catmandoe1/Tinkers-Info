@@ -27,12 +27,24 @@ while active do
 	print("c = Tank" .. tankNotConnected)
 	print("d = Exit program")
   userIn = io.read()
-	if userIn == "a" or userIn == "A" and isSmelteryConnected == true then
-		smelteryInfo.main()
-	elseif userIn == "b" or userIn == "B" and isFurnaceConnected == true then
-		furnaceInfo.main()
-	elseif userIn == "c" or userIn == "C" and isTankConnected == true then
-		tankInfo.main()
+	if (userIn == "a" or userIn == "A") then
+		if isSmelteryConnected == true then
+			smelteryInfo.main()
+		else
+			print("Smeltery not connected")
+		end
+	elseif (userIn == "b" or userIn == "B") then
+		if isFurnaceConnected == true then
+			furnaceInfo.main()	
+		else
+			print("Furnace not connected")
+		end
+	elseif (userIn == "c" or userIn == "C") then
+		if isTankConnected == true then
+			tankInfo.main()
+		else
+			print("Tank not connected")
+		end
   elseif userIn == "d" or userIn == "D" then
     active = false
   else
