@@ -48,6 +48,6 @@ while active do
   elseif userIn == "d" or userIn == "D" then
     active = false
   else
-    print("Invalid input")
+   	print("Invalid input")
   end
 end
